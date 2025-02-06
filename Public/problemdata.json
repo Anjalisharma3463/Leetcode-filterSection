@@ -1,0 +1,22 @@
+[
+    { "id": 1, "title": "Two Sum", "status": "Solved", "difficulty": "Easy" },
+    { "id": 2, "title": "Best Time to Buy and Sell Stock", "status": "Solved", "difficulty": "Easy" },
+    { "id": 3, "title": "Merge Sorted Array", "status": "Attempted", "difficulty": "Easy" },
+    { "id": 4, "title": "Valid Parentheses", "status": "Todo", "difficulty": "Easy" },
+    { "id": 5, "title": "Maximum Subarray", "status": "Solved", "difficulty": "Easy" },
+    { "id": 6, "title": "Climbing Stairs", "status": "Todo", "difficulty": "Easy" },
+    { "id": 7, "title": "Linked List Cycle", "status": "Solved", "difficulty": "Easy" },
+    { "id": 8, "title": "Remove Duplicates from Sorted Array", "status": "Attempted", "difficulty": "Easy" },
+    { "id": 9, "title": "Sqrt(x)", "status": "Solved", "difficulty": "Easy" },
+    { "id": 10, "title": "Reverse Linked List", "status": "Todo", "difficulty": "Easy" },
+    { "id": 11, "title": "Longest Substring Without Repeating Characters", "status": "Attempted", "difficulty": "Medium" },
+    { "id": 12, "title": "Add Two Numbers", "status": "Solved", "difficulty": "Medium" },
+    { "id": 13, "title": "Container With Most Water", "status": "Todo", "difficulty": "Medium" },
+    { "id": 14, "title": "Search in Rotated Sorted Array", "status": "Solved", "difficulty": "Medium" },
+    { "id": 15, "title": "Combination Sum", "status": "Attempted", "difficulty": "Medium" },
+    { "id": 16, "title": "Unique Paths", "status": "Solved", "difficulty": "Medium" },
+    { "id": 17, "title": "Kth Smallest Element in a BST", "status": "Todo", "difficulty": "Medium" },
+    { "id": 18, "title": "Find First and Last Position of Element in Sorted Array", "status": "Solved", "difficulty": "Medium" },
+    { "id": 19, "title": "Trapping Rain Water", "status": "Attempted", "difficulty": "Hard" },
+    { "id": 20, "title": "Merge k Sorted Lists", "status": "Todo", "difficulty": "Hard" }
+  ]
