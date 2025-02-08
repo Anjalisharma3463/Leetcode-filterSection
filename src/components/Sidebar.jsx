@@ -49,7 +49,7 @@ const Sidebar = () => {
 
       <button
         onClick={toggleSidebar}
-        className={`fixed top-4 left-4 transition-opacity duration-500 ${isOpen ? "opacity-0 invisible" : "opacity-100 visible delay-500"
+        className={`fixed sticky top-4 left-4 transition-opacity duration-500 ${isOpen ? "opacity-0 invisible" : "opacity-100 visible delay-500"
           }`}
       >
         {/* <img src="/hamburger.svg" alt="menu" className="w-6 h-6 filter invert " /> */}

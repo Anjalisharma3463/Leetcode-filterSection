@@ -23,7 +23,7 @@ function App() {
       <div className="w-screen bg-[#1a1a1a]  min-h-screen  ">
 
         {/* sidebar  on mobile */}
-        <div className="flex block md:hidden px-2 bg-green-300 w-screen h-15 justify-between  items-center">
+        <div className="flex sticky top-0 block md:hidden px-2 bg-green-300 w-screen h-15 justify-between  items-center">
            
         <div>
 
@@ -35,7 +35,7 @@ function App() {
 
 
 
-        <div className="md:flex md:justify-between p-10">
+        <div className="md:flex  md:justify-between p-4">
 
           <div className="hidden md:block">
             <Sidebar />
