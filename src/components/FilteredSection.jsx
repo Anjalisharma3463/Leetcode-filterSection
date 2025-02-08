@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Problemcomponent from './Problemcomponent';
 import {Filter , RotateCcw} from 'lucide-react'
+import problemdatajson from '../Data/problemdata.json';
 const FilteredSection = () => {
     const [clicked, setClicked] = useState(false); // State variable to track filter  modelvisibility
     const [filtereddata, setFilteredData] = useState([]); // State variable to store filtered data
     const [selectedFilter, setSelectedFilter] = useState([]); // State variable to store selected filters
-    const [problemData, setProblemData] = useState([]); // State variable to store problem data
+    const [problemData, setProblemData] = useState(problemdatajson); // State variable to store problem data
      
-     useEffect(() => {
-        // Fetch the problem data from the public folder
-        fetch('/problemdata.json')
-            .then((response) => response.json())
-            .then((data) => setProblemData(data))
-            .catch((error) => console.error('Error fetching data:', error));
-    }, []);
+ 
+    
+    
 
     useEffect(() => {
         const filteredData = problemData.filter((item) => {
@@ -171,7 +168,7 @@ const FilteredSection = () => {
                             <div className="mx-12">
                                 <button onClick={Reset} className="bg-[#383838] py-2  px-auto rounded-lg h-10 w-45 mt-5 flex justify-center">
                                     {/* <img src="/reset.svg" alt="" className="w-6 h-6 filter invert pr-2" /> */}
-                                    <RotateCcw size={20}/>
+                                 < RotateCcw size={20}/>
                                     <span>Reset</span>
                                 </button>
                             </div>

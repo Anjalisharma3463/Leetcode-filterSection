@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import ProfileSection from "./components/Profile";
 // import FilteredSection from "./components/FilteredSection";
 import FilteredSection from "./components/FilteredSection";
+import leetcode from "./images/leetcode.svg";
 function App() {
 
   // 1025 - 1600 laptop deskop
@@ -22,14 +23,14 @@ function App() {
       <div className="w-screen bg-[#1a1a1a]  min-h-screen  ">
 
         {/* sidebar  on mobile */}
-        <div className="flex block md:hidden bg-green-300 w-screen h-15 justify-between  items-center">
+        <div className="flex block md:hidden px-2 bg-green-300 w-screen h-15 justify-between  items-center">
            
         <div>
 
             <Sidebar />
         </div>
             
-          <img src="/leetcode.svg" alt="" className="w-6 h-6 filter invert" />
+          <img src={leetcode} alt="" className="w-6 h-6 filter  invert" />
         </div>
 
 

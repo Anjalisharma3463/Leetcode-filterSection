@@ -1,5 +1,5 @@
 import React from "react";
- 
+ import rightimage from "../images/right.svg"; 
 const Problem = ({ index, id,title , difficulty}) => {
     
     const bgcolor = (index%2) == 0 ? "bg-[#434343]" : "bg-[#343434]";
@@ -11,7 +11,7 @@ const Problem = ({ index, id,title , difficulty}) => {
          <div className="flex   ">
           <div>
 
-          <img src="/right.svg" alt="right icon" className="w-4 h-4 sm:w-6 h-6"/>
+          <img src={rightimage} alt="right icon" className="w-4 h-4 sm:w-6 h-6"/>
           </div>
           <div className="text-xs  ">
 
