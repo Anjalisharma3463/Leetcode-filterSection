@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Problemcomponent from './Problemcomponent';
-import {Filter} from 'lucide-react'
+import {Filter , RotateCcw} from 'lucide-react'
 const FilteredSection = () => {
     const [clicked, setClicked] = useState(false); // State variable to track filter  modelvisibility
     const [filtereddata, setFilteredData] = useState([]); // State variable to store filtered data
@@ -170,7 +170,8 @@ const FilteredSection = () => {
                             {/* third  butttone    */}
                             <div className="mx-12">
                                 <button onClick={Reset} className="bg-[#383838] py-2  px-auto rounded-lg h-10 w-45 mt-5 flex justify-center">
-                                    <img src="/reset.svg" alt="" className="w-6 h-6 filter invert pr-2" />
+                                    {/* <img src="/reset.svg" alt="" className="w-6 h-6 filter invert pr-2" /> */}
+                                    <RotateCcw size={20}/>
                                     <span>Reset</span>
                                 </button>
                             </div>
