@@ -53,18 +53,19 @@ const FilteredSection = () => {
     }
     return (
         <>
-            <div className='flex flex-col '>
+             {/* parent div  for yellow and red*/}
+            <div  className='  mt-10 md:ml-10 md:mr-15  md:w-[400px]    '>
 
 
                 {/* filter button  line */}
-                <div className=' p-2  w-120 h-15   flex-row'>
+                <div className=' p-2   '>
                     <div>
                         <button
                             onClick={toggle}
-                            className="rounded-xl flex items-center p-2 w-25 h-9 bg-white   font-semibold"
+                            className="rounded-xl flex items-center p-2  bg-white   font-semibold"
                         >
                             <img src="/filter.svg" alt="filter icon" className="w-5  " />
-                            <span className="pl-3 text-base">Filter</span>
+                            <span className="px-3 text-base">Filter</span>
                         </button>
                     </div>
 
@@ -72,7 +73,7 @@ const FilteredSection = () => {
                     {/* selection of filter model on top of filtered data . it must be absolutie or fixed . it will come on top of filtered data whenver clicked will be true  */}
                     {clicked &&
                          
-                        <div className=" font-medium w-80 text-white flex flex-col fixed  h-70 bg-[#434343] rounded">
+                        <div className=" font-medium   w-[320Px] text-white flex flex-col absolute  h-70 bg-[#434343] rounded">
                             {/* first status  */}
                             <div className=" p-2">
                                 <h1 className='pl-4'>Status</h1>
@@ -180,26 +181,26 @@ const FilteredSection = () => {
 
 
 
-                {/* filtered Data */}
-                <div  > 
-                      <div className='p-2 flex flex-col w-full  '>
+                {/* filtered Data RED */}
+               
+                      <div className='p-2 flex flex-col   '>
 
                       {
                          
                           filtereddata.map((item, index) => {
                               return (
                                 <>
-                                
-                                <Problemcomponent   index={index}  id={item.id} title={item.title} difficulty={item.difficulty} />
+                                   <Problemcomponent   index={index}  id={item.id} title={item.title} difficulty={item.difficulty} />
                                 </>
                             );
                         })
                     }
                     </div>
-                </div>
+             
             </div>
         </>
-    );
+      
+);
 };
 
 export default FilteredSection;
@@ -212,3 +213,19 @@ export default FilteredSection;
 // Users can select any combination of these checkboxes and click "Apply" to filter the data accordingly.
 // If no checkbox is selected, the default 10 problems will be displayed.
 // The displayed data (both the full list and the filtered results) will come from problemData.js.
+
+
+
+
+// npm i lucid icon /
+// react-particles
+
+
+//   job juntion 
+// 2 portfolio
+// ai
+// api testing tool 
+// whishpershield
+// chat generator 
+
+

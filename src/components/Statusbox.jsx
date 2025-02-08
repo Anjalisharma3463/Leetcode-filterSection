@@ -5,7 +5,7 @@ export const Statusbox = ({ status , problems }) => {
    
 
   return (
-    <div className='flex-col text-center bg-[#434343] mt-3 rounded w-24 h-15 ml-3 p-2'>
+    <div className='flex-col text-center bg-[#434343] mt-3 rounded   h-15 ml-3 p-2'>
       <p className={statusColor}>{status}</p>
       <p>{`${problems}/${problems}`}</p>
     </div>

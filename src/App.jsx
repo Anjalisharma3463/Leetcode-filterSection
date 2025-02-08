@@ -5,32 +5,58 @@ import ProfileSection from "./components/Profile";
 import FilteredSection from "./components/FilteredSection";
 function App() {
 
+  // 1025 - 1600 laptop deskop
+  // 768 - 1024 tablet
+  // 320 - 480 mobile
 
+  // sm - w >= 640px
+  // md - w >= 768px
+  // lg - w >= 1024px
+
+
+
+  // xl - w >= 1280px
+  // 2xl - w >= 1536px
   return (
     <>
- 
-      <div className='flex flex-row w-full h-auto bg-[#1a1a1a]     justify-between'>
+      <div className="w-screen bg-[#1a1a1a]  min-h-screen  ">
+
+        {/* sidebar  on mobile */}
+        <div className="flex block md:hidden bg-green-300 w-screen h-15 justify-between  items-center">
+           
         <div>
 
-          <Sidebar />
+            <Sidebar />
         </div>
-        <div className='flex p-10   '>
-
-          <div  >
-
-            <ProfileSection />
-          </div>
-
-          <div className=' ml-10      '>
-
-            <FilteredSection />
-          </div>
-
+            
+          <img src="/leetcode.svg" alt="" className="w-6 h-6 filter invert" />
         </div>
 
+
+
+        <div className="md:flex md:justify-between p-10">
+
+          <div className="hidden md:block">
+            <Sidebar />
+          </div>
+
+           <div className="md:flex    ">
+            
+          <ProfileSection />
+          <FilteredSection />
+           </div>
+        </div>
       </div>
+
+
+
     </>
   )
+
+
 }
 
 export default App
+
+
+

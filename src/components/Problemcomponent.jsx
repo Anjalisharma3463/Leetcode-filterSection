@@ -7,17 +7,21 @@ const Problem = ({ index, id,title , difficulty}) => {
  const color = difficulty === "Easy" ? "text-green-400" : difficulty === "Medium" ? "text-yellow-400" : "text-red-400";
   return (
       <>
-       <div className={ ` p-2 text-white w-150 h-10 ${bgcolor} rounded flex justify-between`}>
-         <div className="flex">
+       <div className={ ` px-2 text-white    h-13 sm:h-10 ${bgcolor} rounded flex justify-between items-center`}>
+         <div className="flex   ">
+          <div>
 
-          <img src="/right.svg" alt="right icon" className="w-6 h-6"/>
-          <span>{`${id}.`}</span>
-          <span>{title}</span> 
-       </div>
+          <img src="/right.svg" alt="right icon" className="w-4 h-4 sm:w-6 h-6"/>
+          </div>
+          <div className="text-xs  ">
 
-       <div>
-          <span className={color}>{difficulty}</span>
+          <span  >{`${id}.`}</span>
+          <span  >{title}</span> 
+          </div>
        </div>
+ 
+          <span className={`${color} pl-2 text-xs `}>{difficulty}</span>
+        
          </div>
       </>
   )

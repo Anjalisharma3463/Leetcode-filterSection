@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +8,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="relative">
-
+    <>
       <div
-        className={`fixed top-0 left-0 h-screen w-64 bg-[#333333] text-white shadow-lg transform transition-transform duration-500 ${isOpen ? "translate-x-0" : "-translate-x-64"
+        className={` fixed  top-0 left-0 h-screen w-64 bg-[#333333] text-white shadow-lg transform  transition-transform duration-500
+           ${isOpen ? "translate-x-0" : "-translate-x-64"
           }`}
       >
 
@@ -50,11 +50,10 @@ const Sidebar = () => {
         className={`fixed top-4 left-4 transition-opacity duration-500 ${isOpen ? "opacity-0 invisible" : "opacity-100 visible delay-500"
           }`}
       >
-        <img src="/hamburger.svg" alt="menu" className="w-6 h-6 filter invert" />
+        <img src="/hamburger.svg" alt="menu" className="w-6 h-6 filter invert " />
       </button>
 
-
-    </div>
+ </>
   );
 };
 
