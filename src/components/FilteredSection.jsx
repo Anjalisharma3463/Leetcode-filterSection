@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Problemcomponent from './Problemcomponent';
-
+import {Filter} from 'lucide-react'
 const FilteredSection = () => {
     const [clicked, setClicked] = useState(false); // State variable to track filter  modelvisibility
     const [filtereddata, setFilteredData] = useState([]); // State variable to store filtered data
@@ -64,7 +64,8 @@ const FilteredSection = () => {
                             onClick={toggle}
                             className="rounded-xl flex items-center p-2  bg-white   font-semibold"
                         >
-                            <img src="/filter.svg" alt="filter icon" className="w-5  " />
+                             <Filter size={20} fill='black'/>
+                            {/* <img src="/filter.svg" alt="filter icon" className="w-5  " /> */}
                             <span className="px-3 text-base">Filter</span>
                         </button>
                     </div>

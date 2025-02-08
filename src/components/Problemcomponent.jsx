@@ -7,7 +7,7 @@ const Problem = ({ index, id,title , difficulty}) => {
  const color = difficulty === "Easy" ? "text-green-400" : difficulty === "Medium" ? "text-yellow-400" : "text-red-400";
   return (
       <>
-       <div className={ ` px-2 text-white    h-13 sm:h-10 ${bgcolor} rounded flex justify-between items-center`}>
+       <div className={ ` px-2 text-white    h-14   sm:h-10 ${bgcolor} rounded flex justify-between items-center`}>
          <div className="flex   ">
           <div>
 

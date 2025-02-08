@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
  import { Statusbox } from './Statusbox';
+ import { Star,Play } from 'lucide-react';
+ 
 const Progressbar = () => {
   return (
 
@@ -42,8 +44,8 @@ export default function ProfileSection() {
           <div>
             {/* image  */}
           <div  className="w-25 h-25  bg-white rounded flex justify-center items-center">
-
-          <img src="/favourite.svg" alt="" className=' pb-4 w-20  h-20' />
+          <Star color='yellow' size={64} fill="yellow" strokeWidth={0} /> 
+          {/* <img src="/favourite.svg" alt="" className=' pb-4 w-20  h-20' /> */}
           </div>
 
            
@@ -52,7 +54,8 @@ export default function ProfileSection() {
 
           {/* Practice Button */}
           <button className="mt-4 mb-5 p-2 bg-white flex justify-center rounded items-center text-black font-medium">
-           <img src="/play.svg" alt=""  className='w-5 h-5'/>
+           {/* <img src="/play.svg" alt=""  className='w-5 h-5'/> */}
+           <Play size={20} fill='black'  />
            <span className='pl-1'>Practice</span>
           </button>
           <hr />
